@@ -16,8 +16,8 @@
   <meta name="twitter:description" content="Algoleap Success Story">
   <meta name="twitter:image" content="/assets/images/og-image.png">
   <link rel="canonical" href="/">
-  <link rel="icon" href="assets/favicon.svg">
-  <link rel="stylesheet" href="styles.css?v=static-visual-2">
+  <link rel="icon" href="/assets/favicon.svg">
+  <link rel="stylesheet" href="/styles.css?v=static-visual-2">
   <style>
     .detail-hero {
       position: relative;
@@ -248,7 +248,7 @@
 <body>
   <header class="site-header">
     <a class="brand" href="/">
-      <img src="assets/logo.png" alt=" Algoleap">
+      <img src="/assets/logo.png" alt=" Algoleap">
     </a>
     <input class="nav-toggle" id="nav-toggle" type="checkbox" aria-label="Toggle main menu">
     <label class="nav-toggle-label" for="nav-toggle"><span></span></label>
@@ -267,7 +267,7 @@
 
   <footer class="site-footer">
     <div class="container">
-      <div class="footer-logo"><img src="assets/logo.png" alt="Algoleap"></div>
+      <div class="footer-logo"><img src="/assets/logo.png" alt="Algoleap"></div>
       <div class="footer-grid">
         <div>
           <h3>Get in Touch</h3>
@@ -329,9 +329,9 @@
             </a>
           </div>
           <div class="copyright" style="margin-top: 24px; font-size: 11px; color: #8e9a93;">
-            &copy; algoleap 2025. All Rights Reserved. <a href="privacy-policy.html"
+            &copy; algoleap 2025. All Rights Reserved. <a href="/privacy-policy.html"
               style="color: #8e9a93; text-decoration: underline;">Privacy Policy</a> | <br>
-            <a href="terms-and-conditions.html" style="color: #d9636e; text-decoration: underline;">Terms and
+            <a href="/terms-and-conditions.html" style="color: #d9636e; text-decoration: underline;">Terms and
               Conditions</a>
           </div>
         </div>
@@ -368,7 +368,7 @@
 
       try {
         // Fetch from the root json you provided
-        const response = await fetch('success-stories-data.json');
+        const response = await fetch('/success-stories-data.json');
         if (!response.ok) throw new Error('Failed to load stories data');
 
         const stories = await response.json();
@@ -400,8 +400,8 @@
                 <h2 class="related-title">Related <span>Success Stories</span></h2>
                 <div class="card-grid-3">
                   ${related.map(s => {
-            // strip leading slash for static asset paths if necessary
-            const imgUrl = s.thumbnailUrl.startsWith('/') ? s.thumbnailUrl.substring(1) : s.thumbnailUrl;
+            // Ensure leading slash for absolute path from root
+            const imgUrl = s.thumbnailUrl.startsWith('/') ? s.thumbnailUrl : '/' + s.thumbnailUrl;
             return `
                     <a href="/successstories/${s.slug}" class="case-study-card">
                       <div class="case-study-img-wrap">
@@ -420,7 +420,7 @@
           `;
         }
 
-        const heroBg = story.thumbnailUrl.startsWith('/') ? story.thumbnailUrl.substring(1) : story.thumbnailUrl;
+        const heroBg = story.thumbnailUrl.startsWith('/') ? story.thumbnailUrl : '/' + story.thumbnailUrl;
 
         mainContent.innerHTML = `
           <!-- Hero Section -->
