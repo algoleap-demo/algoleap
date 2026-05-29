@@ -1,0 +1,15 @@
+{
+  "cleanUrls": true,
+  "rewrites": [
+    { "source": "/", "destination": "/home.html" },
+    { "source": "/algoleapai", "destination": "/algoleap-ai.html" },
+    { "source": "/whoarewe", "destination": "/who-are-we.html" },
+    { "source": "/whatwedo", "destination": "/what-we-do.html" },
+    { "source": "/ourstudio", "destination": "/our-studio.html" },
+    { "source": "/successstories", "destination": "/success-stories.html" },
+    { "source": "/successstories/:slug", "destination": "/success-story-detail.html?slug=:slug" },
+    { "source": "/ourinsights", "destination": "/our-insights.html" },
+    { "source": "/careers", "destination": "/careers.html" },
+    { "source": "/contactus", "destination": "/contact-us.html" }
+  ]
+}

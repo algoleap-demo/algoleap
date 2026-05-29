@@ -7,23 +7,32 @@
   <title>Success Stories | Algoleap</title>
   <meta name="description"
     content="Read Algoleap success stories across product engineering, service management, and AI.">
-  <link rel="canonical" href="https://algoleap.com/success-stories">
+  <meta property="og:title" content="Success Stories | Algoleap">
+  <meta property="og:description" content="Read Algoleap success stories across product engineering, service management, and AI.">
+  <meta property="og:image" content="/assets/images/og-image.png">
+  <meta property="og:url" content="/success-stories">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Success Stories | Algoleap">
+  <meta name="twitter:description" content="Read Algoleap success stories across product engineering, service management, and AI.">
+  <meta name="twitter:image" content="/assets/images/og-image.png">
+  <link rel="canonical" href="/success-stories">
   <link rel="icon" href="assets/favicon.svg">
   <link rel="stylesheet" href="styles.css?v=static-visual-2">
 </head>
 
 <body>
   <header class="site-header">
-    <a class="brand" href="home.html">
+    <a class="brand" href="/">
       <img src="assets/logo.png" alt=" Algoleap">
     </a>
     <input class="nav-toggle" id="nav-toggle" type="checkbox" aria-label="Toggle main menu">
     <label class="nav-toggle-label" for="nav-toggle"><span></span></label>
-    <nav class="site-nav" aria-label="Main navigation"><a class="" href="algoleap-ai.html">algoleap AI</a><a class=""
-        href="who-are-we.html">Who are we</a><a class="" href="what-we-do.html">What we
-        do</a><a class="" href="our-studio.html">Our Studio</a><a class="active" href="success-stories.html">Success
-        Stories</a><a class="" href="our-insights.html">Our
-        Insights</a><a class="" href="careers.html">Careers</a><a class="" href="contact-us.html">Contact Us</a></nav>
+    <nav class="site-nav" aria-label="Main navigation"><a class="" href="/algoleapai">algoleap AI</a><a class=""
+        href="/whoarewe">Who are we</a><a class="" href="/whatwedo">What we
+        do</a><a class="" href="/ourstudio">Our Studio</a><a class="active" href="/successstories">Success
+        Stories</a><a class="" href="/ourinsights">Our
+        Insights</a><a class="" href="/careers">Careers</a><a class="" href="/contactus">Contact Us</a></nav>
   </header>
   <main>
     <section class="hero ">
@@ -34,7 +43,7 @@
         <h1>We customize projects<br><span>to suit your business requirements.</span></h1>
         <p>Our customized services span from digital transformation consulting to enterprise technology implementation.
         </p>
-        <a class="button button-light" href="contact-us.html">Contact Our Team <span aria-hidden="true"><svg width="16"
+        <a class="button button-light" href="/contactus">Contact Our Team <span aria-hidden="true"><svg width="16"
               height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
               stroke-linecap="round" stroke-linejoin="round">
               <polyline points="9 18 15 12 9 6"></polyline>
@@ -85,7 +94,7 @@
             first, agile first mindset to deliver next gen technology efficiencies and impact with modern apps build out
             and management.</p>
           <div style="margin-top: 32px;">
-            <a class="button" href="contact-us.html"
+            <a class="button" href="/contactus"
               style="background: #fff; border: 1px solid #c3d7c7; color: var(--brand); font-weight: 500;">Have a complex
               problem? Let's Talk <span aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"
                   stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
@@ -193,7 +202,7 @@
       const displayData = isLimited ? filteredData.slice(0, 6) : filteredData;
 
       grid.innerHTML = displayData.map(item => `
-        <a href="success-story-detail.html?slug=${item.slug}" class="case-study-card">
+        <a href="/successstories/${item.slug}" class="case-study-card">
           <div class="case-study-img-wrap">
             <img src="${item.thumbnailUrl.startsWith('/') ? item.thumbnailUrl.substring(1) : item.thumbnailUrl}" alt="">
             <span class="case-study-pill">${item.tag}</span>

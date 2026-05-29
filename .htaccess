@@ -1,0 +1,20 @@
+RewriteEngine On
+RewriteBase /
+
+# Remove .html extension
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^([^\.]+)$ $1.html [NC,L]
+
+# Custom page mappings
+RewriteRule ^algoleapai/?$ algoleap-ai.html [L]
+RewriteRule ^whoarewe/?$ who-are-we.html [L]
+RewriteRule ^whatwedo/?$ what-we-do.html [L]
+RewriteRule ^ourstudio/?$ our-studio.html [L]
+RewriteRule ^successstories/?$ success-stories.html [L]
+RewriteRule ^ourinsights/?$ our-insights.html [L]
+RewriteRule ^careers/?$ careers.html [L]
+RewriteRule ^contactus/?$ contact-us.html [L]
+
+# Dynamic slugs for success stories
+RewriteRule ^successstories/([^/]+)/?$ success-story-detail.html?slug=$1 [L,QSA]

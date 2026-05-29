@@ -6,7 +6,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Success Story Detail | Algoleap</title>
   <meta name="description" content="Algoleap Success Story">
-  <link rel="canonical" href="https://algoleap.com">
+  <meta property="og:title" content="Success Story Detail | Algoleap">
+  <meta property="og:description" content="Algoleap Success Story">
+  <meta property="og:image" content="/assets/images/og-image.png">
+  <meta property="og:url" content="/">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Success Story Detail | Algoleap">
+  <meta name="twitter:description" content="Algoleap Success Story">
+  <meta name="twitter:image" content="/assets/images/og-image.png">
+  <link rel="canonical" href="/">
   <link rel="icon" href="assets/favicon.svg">
   <link rel="stylesheet" href="styles.css?v=static-visual-2">
   <style>
@@ -238,16 +247,16 @@
 
 <body>
   <header class="site-header">
-    <a class="brand" href="index.html">
+    <a class="brand" href="/">
       <img src="assets/logo.png" alt=" Algoleap">
     </a>
     <input class="nav-toggle" id="nav-toggle" type="checkbox" aria-label="Toggle main menu">
     <label class="nav-toggle-label" for="nav-toggle"><span></span></label>
-    <nav class="site-nav" aria-label="Main navigation"><a class="" href="algoleap-ai.html">algoleap AI</a><a class=""
-        href="who-are-we.html">Who are we</a><a class="" href="what-we-do.html">What we do</a><a class=""
-        href="our-studio.html">Our Studio</a><a class="active" href="success-stories.html">Success Stories</a><a
-        class="" href="our-insights.html">Our Insights</a><a class="" href="careers.html">Careers</a><a class=""
-        href="contact-us.html">Contact Us</a></nav>
+    <nav class="site-nav" aria-label="Main navigation"><a class="" href="/algoleapai">algoleap AI</a><a class=""
+        href="/whoarewe">Who are we</a><a class="" href="/whatwedo">What we do</a><a class=""
+        href="/ourstudio">Our Studio</a><a class="active" href="/successstories">Success Stories</a><a
+        class="" href="/ourinsights">Our Insights</a><a class="" href="/careers">Careers</a><a class=""
+        href="/contactus">Contact Us</a></nav>
   </header>
 
   <main id="main-content">
@@ -333,14 +342,22 @@
   <script>
     document.addEventListener("DOMContentLoaded", async () => {
       const urlParams = new URLSearchParams(window.location.search);
-      const slug = urlParams.get('slug');
+      let slug = urlParams.get('slug');
+      
+      // Fallback for clean URL routing (e.g., /successstories/some-slug)
+      if (!slug) {
+        const pathParts = window.location.pathname.split('/').filter(Boolean);
+        if (pathParts.length > 0) {
+          slug = pathParts[pathParts.length - 1];
+        }
+      }
       const mainContent = document.getElementById('main-content');
 
       const errorHTML = `
         <div class="error-state">
           <h2>Story Not Found</h2>
           <p>We couldn't find the success story you were looking for.</p>
-          <a href="success-stories.html" class="button">Back to Success Stories</a>
+          <a href="/successstories" class="button">Back to Success Stories</a>
         </div>
       `;
 
@@ -386,7 +403,7 @@
             // strip leading slash for static asset paths if necessary
             const imgUrl = s.thumbnailUrl.startsWith('/') ? s.thumbnailUrl.substring(1) : s.thumbnailUrl;
             return `
-                    <a href="success-story-detail.html?slug=${s.slug}" class="case-study-card">
+                    <a href="/successstories/${s.slug}" class="case-study-card">
                       <div class="case-study-img-wrap">
                         <img src="${imgUrl}" alt="">
                         <span class="case-study-pill">${s.tag}</span>
@@ -415,7 +432,7 @@
             </div>
             
             <div class="container detail-content">
-              <a href="success-stories.html" class="back-link">
+              <a href="/successstories" class="back-link">
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
                 Back to Success Stories
               </a>
@@ -465,7 +482,7 @@
                     
                     <div class="sidebar-cta">
                       <h4>Have a similar challenge?</h4>
-                      <a href="contact-us.html" class="button" style="width: 100%; display: flex; justify-content: center;">
+                      <a href="/contactus" class="button" style="width: 100%; display: flex; justify-content: center;">
                         Talk to an Expert
                         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="margin-left: 8px;"><polyline points="9 18 15 12 9 6"></polyline></svg>
                       </a>
