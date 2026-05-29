@@ -1,0 +1,137 @@
+[
+  {
+    "id": 1,
+    "category": "Service Management",
+    "type": "Case Study",
+    "title": "Algoleap Transforms IT Operations with an agentic mesh deployment (investigation handbook) for a Fortune 1000 Tech Giant",
+    "image": "assets/images/success stories/success3.webp",
+    "status": "visible",
+    "url": "/algoleap-transforms-it-operations-with-an-agentic-mesh-deployment-investigation-handbook-for-a-fortune-1000-tech-giant-2/"
+  },
+  {
+    "id": 2,
+    "category": "Artificial Intelligence & Automation",
+    "type": "Case Study",
+    "title": "AI Operating Model for a European Manufacturing client",
+    "image": "assets/images/success stories/success4.jpg",
+    "status": "visible",
+    "url": "/ai-operating-model-for-a-european-manufacturing-client/"
+  },
+  {
+    "id": 3,
+    "category": "Artificial Intelligence & Automation",
+    "type": "Case Study",
+    "title": "Algoleap Revolutionizes B2B Professional Services and Advisory Presentations with LLM/Gen AI-Powered Automation",
+    "image": "assets/images/success stories/success5.jpg",
+    "status": "visible",
+    "url": "/algoleap-revolutionizes-b2b-professional-services-and-advisory-presentations-with-llm-gen-ai-powered-automation/"
+  },
+  {
+    "id": 4,
+    "category": "Artificial Intelligence & Automation",
+    "type": "Case Study",
+    "title": "Transform sales operations with an enterprise agentic mesh rollout at a Leading US Firm",
+    "image": "assets/images/success stories/success6.jpg",
+    "status": "visible",
+    "url": "#"
+  },
+  {
+    "id": 5,
+    "category": "Artificial Intelligence & Automation",
+    "type": "Case Study",
+    "title": "Algoleap Drives Next-Gen Productivity for a global content services firm: Decommissioning Office Copilot for Superior Enterprise Integrations and Operational Flexibility",
+    "image": "assets/images/success stories/success7.jpg",
+    "status": "visible",
+    "url": "#"
+  },
+  {
+    "id": 6,
+    "category": "Service Management",
+    "type": "Case Study",
+    "title": "AI-Powered IT Process Automation Hub Streamlines Operations for Fortune 1000 Global Data Provider",
+    "image": "assets/images/success stories/success8.webp",
+    "status": "visible",
+    "url": "#"
+  },
+  {
+    "id": 7,
+    "category": "Service Management",
+    "type": "Case Study",
+    "title": "Elevating Customer Experience with knowledge management : How Algoleap Transformed Support for a Global Industry Leader",
+    "image": "assets/images/success stories/success9.jpg",
+    "status": "visible",
+    "url": "#"
+  },
+  {
+    "id": 8,
+    "category": "Service Management",
+    "type": "Case Study",
+    "title": "Optimizing Service Management for a Leading Information Services Firm",
+    "image": "assets/images/success stories/success10.webp",
+    "status": "visible",
+    "url": "#"
+  },
+  {
+    "id": 9,
+    "category": "Service Management",
+    "type": "Case Study",
+    "title": "Enhancing Support Efficiency for aGlobal Payments Leader",
+    "image": "assets/images/success stories/success11.webp",
+    "status": "visible",
+    "url": "#"
+  },
+  {
+    "id": 10,
+    "category": "Service Management",
+    "type": "Case Study",
+    "title": "Transforming Service Management for a Global Ed-Tech Leader",
+    "image": "assets/images/success stories/success12.webp",
+    "status": "visible",
+    "url": "#"
+  },
+  {
+    "id": 11,
+    "category": "Artificial Intelligence & Automation",
+    "type": "Case Study",
+    "title": "Optimizing BI and Visualization for a$10 billion+ Europe-based manufacturer",
+    "image": "assets/images/success stories/success13.webp",
+    "status": "visible",
+    "url": "#"
+  },
+  {
+    "id": 12,
+    "category": "Artificial Intelligence & Automation",
+    "type": "Case Study",
+    "title": "Accelerating Processes for a Leading Firm conducting niche market research & custom reports",
+    "image": "assets/images/success stories/success14.webp",
+    "status": "visible",
+    "url": "#"
+  },
+  {
+    "id": 13,
+    "category": "Digital Product Engineering",
+    "type": "Case Study",
+    "title": "Enhancing AI Capabilities for a leading HR and Workforce Analytics Platform",
+    "image": "assets/images/success stories/success16.webp",
+    "status": "visible",
+    "url": "#"
+  },
+  {
+    "id": 14,
+    "category": "Digital Product Engineering",
+    "type": "Case Study",
+    "title": "Streamlining Data Management for a Fortune 500 Industrial Leader",
+    "image": "assets/images/success stories/success17.webp",
+    "status": "visible",
+    "url": "#"
+  },
+  {
+    "id": 15,
+    "category": "Digital Product Engineering",
+    "type": "Case Study",
+    "title": "Optimizing Technology Delivery for a Leading Taxation Services Firm",
+    "image": "assets/images/success stories/success18.png",
+    "status": "visible",
+    "url": "#"
+  }
+]
