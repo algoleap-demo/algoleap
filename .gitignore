@@ -22,6 +22,10 @@ yarn-debug.log*
 yarn-error.log*
 .pnp.*
 
+# Archives
+Algoleap-Website.zip
+*.zip
+
 # IDEs and Editors
 .idea/
 .vscode/
