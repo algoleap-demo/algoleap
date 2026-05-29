@@ -204,7 +204,7 @@
       grid.innerHTML = displayData.map(item => `
         <a href="/successstories/${item.slug}" class="case-study-card">
           <div class="case-study-img-wrap">
-            <img src="${item.thumbnailUrl.startsWith('/') ? item.thumbnailUrl.substring(1) : item.thumbnailUrl}" alt="">
+            <img src="${item.thumbnailUrl.startsWith('/') ? item.thumbnailUrl : '/' + item.thumbnailUrl}" alt="">
             <span class="case-study-pill">${item.tag}</span>
           </div>
           <div class="case-study-content">

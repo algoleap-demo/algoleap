@@ -240,7 +240,7 @@
           grid.innerHTML = storiesToDisplay.map(story => `
             <a href="/successstories/${story.slug}" class="case-study-card">
               <div class="case-study-img-wrap">
-                <img src="${story.thumbnailUrl.startsWith('/') ? story.thumbnailUrl.substring(1) : story.thumbnailUrl}" alt="">
+                <img src="${story.thumbnailUrl.startsWith('/') ? story.thumbnailUrl : '/' + story.thumbnailUrl}" alt="">
                 <span class="case-study-pill">${story.tag}</span>
               </div>
               <div class="case-study-content">
